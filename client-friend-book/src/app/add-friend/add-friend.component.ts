@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./add-friend.component.css'],
 })
 export class AddFriendComponent implements OnInit {
-  friend = new Friend('', '', '', '', false);
+  friend = new Friend('', '', '', '','', false);
 
   constructor(private addFriendService: AddFriendService, private router: Router) {}
 

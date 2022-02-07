@@ -26,7 +26,7 @@ import { EditFriendComponent } from './edit-friend/edit-friend.component';
       { path: 'all', component: AllFriendsComponent },
       { path: 'add', component: AddFriendComponent },
       { path: 'best', component: BestFriendsComponent },
-      { path: 'edit', component: EditFriendComponent },
+      { path: 'edit/:id', component: EditFriendComponent },
       { path: '', redirectTo: '/all', pathMatch: 'full' },
     ]),
   ],

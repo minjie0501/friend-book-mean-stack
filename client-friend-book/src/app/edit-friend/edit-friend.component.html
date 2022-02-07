@@ -1,1 +1,21 @@
-<p>edit-friend works!</p>
+<form #addFriendForm="ngForm" action="/all" (ngSubmit)="onSubmit()">
+    <div class="flex flex-col w-1/4">
+        <label for="firstName">First Name</label>
+        <input #firstName="ngModel" [(ngModel)]="friend.firstName" class="border-gray-200 border-2" name="firstName" type="text" required>
+
+        <label  for="lastName">Last Name</label>
+        <input #lastName="ngModel" [(ngModel)]="friend.lastName" class="border-gray-200 border-2" name="lastName" type="text" required>
+
+        <label  for="email">Email</label>
+        <input #email="ngModel" [(ngModel)]="friend.email" class="border-gray-200 border-2" name="email" type="text" required>
+
+        <label for="phone">Phone</label>
+        <input #phone="ngModel" [(ngModel)]="friend.phone" class="border-gray-200 border-2" name="phone" type="text" required>
+
+        <label for="bestFriend">Best Friend</label>
+        <input #bestFriend="ngModel" [(ngModel)]="friend.bestFriend" class="border-gray-200 border-2"  name="bestFriend" type="checkbox" required>
+
+        <button class="bg-gray-200" type="submit">Edit Friend Data</button>
+    </div>
+
+</form>

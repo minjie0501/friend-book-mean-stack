@@ -1,1 +1,7 @@
-<p>all-friends works!</p>
+<div *ngFor="let item of friends; index as i;">
+    <div class="flex">
+        <p class="p-2">{{item.firstName}}</p>
+        <button (click)="onEdit(item)" class="border-gray-200 border-2 w-16 mx-2">Edit</button>
+        <button (click)="onDelete($event)" class="bg-red-100 border-red-800 border-2" id={{item._id}}>Delete</button>
+    </div>
+</div>
